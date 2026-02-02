@@ -1,0 +1,110 @@
+{
+    "version": "1.0.0",
+    "description": "Default ROI assumptions for enterprise software implementations",
+    "implementation_costs": {
+        "description": "Implementation costs as multiplier of annual license",
+        "conservative": 1.5,
+        "moderate": 1.2,
+        "aggressive": 1.0,
+        "notes": "Includes professional services, data migration, integration, training"
+    },
+    "efficiency_gains": {
+        "description": "Expected efficiency improvements by category",
+        "process_automation": {
+            "conservative": 0.15,
+            "moderate": 0.25,
+            "aggressive": 0.35,
+            "notes": "Manual process elimination, straight-through processing"
+        },
+        "error_reduction": {
+            "conservative": 0.1,
+            "moderate": 0.2,
+            "aggressive": 0.3,
+            "notes": "Reduced rework, fewer exceptions, improved accuracy"
+        },
+        "cycle_time": {
+            "conservative": 0.2,
+            "moderate": 0.35,
+            "aggressive": 0.5,
+            "notes": "Faster processing, reduced latency, quicker decisions"
+        },
+        "labor_productivity": {
+            "conservative": 0.1,
+            "moderate": 0.2,
+            "aggressive": 0.3,
+            "notes": "Staff reallocation, reduced overtime, FTE optimization"
+        },
+        "compliance_cost": {
+            "conservative": 0.15,
+            "moderate": 0.25,
+            "aggressive": 0.4,
+            "notes": "Reduced audit costs, automated reporting, fewer penalties"
+        }
+    },
+    "hidden_costs": {
+        "description": "Often overlooked costs in TCO calculations",
+        "training": {
+            "initial_pct_of_license": 0.15,
+            "annual_ongoing_pct": 0.05,
+            "notes": "User training, certification, knowledge transfer"
+        },
+        "maintenance": {
+            "annual_pct_of_license": 0.18,
+            "notes": "Support contracts, patches, upgrades"
+        },
+        "infrastructure": {
+            "annual_pct_of_license": 0.1,
+            "notes": "Hardware, hosting, networking, security"
+        },
+        "opportunity_cost": {
+            "discount_rate": 0.08,
+            "notes": "Cost of capital, alternative investment returns"
+        },
+        "change_management": {
+            "pct_of_implementation": 0.2,
+            "notes": "Communication, stakeholder management, adoption"
+        },
+        "data_migration": {
+            "pct_of_implementation": 0.25,
+            "notes": "Cleansing, transformation, validation, historical load"
+        }
+    },
+    "financial_parameters": {
+        "discount_rate": {
+            "conservative": 0.12,
+            "moderate": 0.1,
+            "aggressive": 0.08,
+            "notes": "WACC or hurdle rate for NPV calculations"
+        },
+        "inflation_rate": 0.03,
+        "tax_rate": 0.25,
+        "depreciation_years": 5
+    },
+    "risk_adjustments": {
+        "description": "Probability-weighted adjustments for benefit realization",
+        "implementation_delay": {
+            "probability": 0.3,
+            "impact_months": 3
+        },
+        "adoption_rate": {
+            "conservative": 0.7,
+            "moderate": 0.85,
+            "aggressive": 0.95
+        },
+        "benefit_realization_timeline": {
+            "year_1_pct": 0.5,
+            "year_2_pct": 0.85,
+            "year_3_pct": 1.0
+        }
+    },
+    "industry_multipliers": {
+        "description": "Industry-specific adjustment factors",
+        "banking": 1.15,
+        "insurance": 1.1,
+        "asset_management": 1.2,
+        "payments": 1.05,
+        "healthcare": 1.1,
+        "manufacturing": 0.95,
+        "retail": 0.9
+    }
+}

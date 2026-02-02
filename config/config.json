@@ -1,0 +1,21 @@
+{
+    "app_name": "ROI Presentation Toolkit",
+    "version": "1.0.0",
+    "default_currency": "USD",
+    "default_years": 3,
+    "output_path": "output",
+    "assumptions_file": "config/assumptions.json",
+    "benchmarks_file": "data/industry_benchmarks.json",
+    "excel_settings": {
+        "company_name": "Enterprise Solutions",
+        "header_color": "366092",
+        "accent_color": "4472C4",
+        "positive_color": "70AD47",
+        "negative_color": "C00000"
+    },
+    "chart_settings": {
+        "theme": "plotly_white",
+        "default_width": 900,
+        "default_height": 600
+    }
+}

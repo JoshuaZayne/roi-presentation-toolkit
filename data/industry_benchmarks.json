@@ -1,0 +1,109 @@
+{
+    "version": "1.0.0",
+    "last_updated": "2026-01-15",
+    "source": "Industry analyst reports, customer case studies, market research",
+    "industries": {
+        "banking_financial_services": {
+            "display_name": "Banking & Financial Services",
+            "typical_current_costs": {
+                "operations_per_million_transactions": 50000,
+                "compliance_per_million_assets": 150,
+                "it_per_employee": 15000
+            },
+            "efficiency_benchmarks": {
+                "process_automation_typical": 0.28,
+                "error_rate_reduction_typical": 0.45,
+                "cycle_time_improvement_typical": 0.4
+            },
+            "roi_benchmarks": {
+                "median_roi_3yr": 185,
+                "top_quartile_roi_3yr": 280,
+                "median_payback_months": 18
+            },
+            "cost_structure": {
+                "labor_pct": 0.45,
+                "technology_pct": 0.25,
+                "compliance_pct": 0.15,
+                "other_pct": 0.15
+            }
+        },
+        "insurance": {
+            "display_name": "Insurance",
+            "typical_current_costs": {
+                "claims_processing_per_claim": 85,
+                "underwriting_per_policy": 120,
+                "it_per_employee": 12000
+            },
+            "efficiency_benchmarks": {
+                "process_automation_typical": 0.32,
+                "error_rate_reduction_typical": 0.35,
+                "cycle_time_improvement_typical": 0.45
+            },
+            "roi_benchmarks": {
+                "median_roi_3yr": 165,
+                "top_quartile_roi_3yr": 240,
+                "median_payback_months": 21
+            },
+            "cost_structure": {
+                "labor_pct": 0.4,
+                "technology_pct": 0.2,
+                "claims_pct": 0.25,
+                "other_pct": 0.15
+            }
+        },
+        "asset_management": {
+            "display_name": "Asset Management",
+            "typical_current_costs": {
+                "operations_per_million_aum": 800,
+                "reporting_per_fund": 25000,
+                "it_per_employee": 20000
+            },
+            "efficiency_benchmarks": {
+                "process_automation_typical": 0.35,
+                "error_rate_reduction_typical": 0.5,
+                "cycle_time_improvement_typical": 0.55
+            },
+            "roi_benchmarks": {
+                "median_roi_3yr": 220,
+                "top_quartile_roi_3yr": 350,
+                "median_payback_months": 15
+            },
+            "cost_structure": {
+                "labor_pct": 0.5,
+                "technology_pct": 0.3,
+                "compliance_pct": 0.1,
+                "other_pct": 0.1
+            }
+        },
+        "payments_fintech": {
+            "display_name": "Payments & Fintech",
+            "typical_current_costs": {
+                "operations_per_million_transactions": 35000,
+                "fraud_per_million_volume": 2500,
+                "it_per_employee": 18000
+            },
+            "efficiency_benchmarks": {
+                "process_automation_typical": 0.4,
+                "error_rate_reduction_typical": 0.55,
+                "cycle_time_improvement_typical": 0.6
+            },
+            "roi_benchmarks": {
+                "median_roi_3yr": 245,
+                "top_quartile_roi_3yr": 380,
+                "median_payback_months": 12
+            },
+            "cost_structure": {
+                "labor_pct": 0.35,
+                "technology_pct": 0.4,
+                "fraud_prevention_pct": 0.15,
+                "other_pct": 0.1
+            }
+        }
+    },
+    "general_benchmarks": {
+        "software_implementation_success_rate": 0.72,
+        "average_implementation_overrun_pct": 0.25,
+        "average_benefit_shortfall_pct": 0.15,
+        "typical_full_adoption_months": 18
+    }
+}
