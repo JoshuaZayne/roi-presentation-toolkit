@@ -30,7 +30,7 @@ class ROIAgent:
                       years: int = 3, scenario: str = "moderate") -> Dict[str, Any]:
         from models.roi_model import ROIModel
         model = ROIModel()
-        result = model.calculate(current_cost, efficiency_gain, implementation_cost, annual_license, years, scenario)
+        result = model.calculate(current_cost, efficiency_gain, annual_license, implementation_cost, years, scenario)
         self.context["inputs"] = {"current_cost": current_cost, "efficiency_gain": efficiency_gain,
                                    "implementation_cost": implementation_cost, "annual_license": annual_license, "years": years}
         self.context["results"][scenario] = result

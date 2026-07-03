@@ -218,16 +218,22 @@ class TCOModel:
         savings_pct = (tco_savings / current_tco * 100) if current_tco > 0 else 0
 
         yearly_comparison = []
+        # Current state projection starts at year 1; future state starts at year 0
+        # (implementation). Align by year number rather than list index so the
+        # cumulatives line up and the final year is not dropped.
+        current_by_year = {y["year"]: y for y in current["yearly_projection"]}
+        future_by_year = {y["year"]: y for y in future["yearly_projection"]}
         for year in range(years + 1):
-            curr_year = current["yearly_projection"][year] if year < len(current["yearly_projection"]) else None
-            fut_year = future["yearly_projection"][year] if year < len(future["yearly_projection"]) else None
-            if curr_year and fut_year:
-                yearly_comparison.append({
-                    "year": year,
-                    "current_cumulative": curr_year.get("cumulative", 0),
-                    "future_cumulative": fut_year.get("cumulative", 0),
-                    "cumulative_savings": curr_year.get("cumulative", 0) - fut_year.get("cumulative", 0),
-                })
+            curr_year = current_by_year.get(year)
+            fut_year = future_by_year.get(year)
+            curr_cumulative = curr_year.get("cumulative", 0) if curr_year else 0
+            fut_cumulative = fut_year.get("cumulative", 0) if fut_year else 0
+            yearly_comparison.append({
+                "year": year,
+                "current_cumulative": curr_cumulative,
+                "future_cumulative": fut_cumulative,
+                "cumulative_savings": curr_cumulative - fut_cumulative,
+            })
 
         hidden_identified = {}
         if include_hidden:

@@ -355,7 +355,7 @@ def export(fmt: str, output: str, prospect: str, current_cost: float, efficiency
 
 
 @cli.command()
-@click.option('--chart', '-c', type=click.Choice(['waterfall', 'tco', 'payback', 'tornado', 'monte-carlo', 'dashboard']),
+@click.option('--chart', '-t', type=click.Choice(['waterfall', 'tco', 'payback', 'tornado', 'monte-carlo', 'dashboard']),
               required=True, help='Chart type to generate')
 @click.option('--output', '-o', type=str, default=None, help='Output file path')
 @click.option('--format', '-f', 'fmt', type=click.Choice(['html', 'png']), default='html', help='Output format')
